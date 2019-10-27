@@ -11,6 +11,51 @@
   <title>タブ練習</title>
 </head>
 <body>
+  <!-- サービス紹介 -->
+  <h2 class="heading-title l-bottom-small">引越し侍の<br>見積もり比較サービスとは？</h2>
+  <section class="section-container">
+    <p class="l-bottom-large">見積り比較サービスとは、面倒で手間のかかる引越し業者の見積もりを簡単に比較して、安い引越し業者を見つけられる無料サービスです。</p>
+    <p class="l-bottom-large">引越し侍では引越しの見積もり比較のやり方を2つのサービスで用意しており、お客様の要望にあわせてご選択頂けます。</p>
+    <table class="table line-height-xsmall table-service l-bottom-small">
+      <thead>
+        <tr>
+          <th></th>
+          <th>一括見積もり<br>依頼サービス</th>
+          <th>ネット見積もり比<br>較＆予約サービス</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>比較までの時間</th>
+          <td>60分程度</td>
+          <td>１分程度</td>
+        </tr>
+        <tr>
+          <th>見積もりフォームの入力</th>
+          <td class="table-cell-allow">○</td>
+          <td class="table-cell-allow">○</td>
+        </tr>
+        <tr>
+          <th>電話対応</th>
+          <td class="table-cell-allow">○</td>
+          <td class="table-cell-deny">×</td>
+        </tr>
+        <tr>
+          <th>メール対応</th>
+          <td class="table-cell-allow">○</td>
+          <td class="table-cell-deny">×</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="legend text-small l-bottom-medium">※○…必要, ×…不要</p>
+    <p class="l-bottom-large">複数の引っ越し見積もりを比較することで、引越し料金を安い金額で抑えることができたり、各引っ越し業者へ値引き交渉することが可能です。</p>
+    <p class="l-bottom-large">ご自分で複数の引っ越し会社へ連絡するのは大変ですが、引越し侍の2つのサービスであれば、どなたでも引越し業者の見積もりを一括で比較できる仕組みとなっています。</p>
+    <h3 class="heading-subtitle l-bottom-large">一括見積もり依頼サービス</h3>
+    <img src="images/service-estimate.png" class="full l-bottom-medium">
+    <p class="l-bottom-large">見積もり申し込みフォームに入力した情報を、複数の引越し業者へ同時に配信されるサービスです。情報を受け取った引越し業者は、電話またはメールで依頼者に料金のお知らせ連絡をいたします。</p>
+    <p class="l-bottom-large">このサービスのメリットは、<span class="text-strong">引越し業者からの折り返し電話で価格交渉をして安くしてもらえる</span>ところです。</p>
+  </section>
+
   <!-- ランキングコンテンツ -->
   <h2 class="heading-title l-bottom-small">おすすめの<br>引越し業者ランキング一覧</h2>
   <section class="section-container">
@@ -476,7 +521,7 @@
     <p class="l-bottom-large">
       以下の表は、単身と家族の引越し相場を月別にしたグラフです。<br>引越しの需要が高くなる3月～4月の繁忙期は、引越しの相場料金が平常月に比べて高くなるので、繁忙期を避けることが引越し費用を抑えるテクニックとして有効です。
     </p>
-    <ul class="legend text-small">
+    <ul class="legend text-small l-bottom-small">
       <li class="l-right-small">
         <span class="legend-colorBox legend-colorBox-single"></span>：単身
       </li>
@@ -775,7 +820,7 @@
             <tr>
               <th>時期</th>
               <td class="simulator-select">
-                <select name="on_season" class="full">
+                <select name="on-season" class="full js-on-season">
                   <option value="0">通常期（5月～2月）</option>
                   <option value="1">繁忙期（3月～4月）</option>
                 </select>
@@ -784,7 +829,7 @@
             <tr class="l-bottom-small">
               <th>荷物量</th>
               <td class="simulator-select">
-                <select name="on_season" class="full">
+                <select name="move-tipe" class="full js-move-type">
                   <option value="0">単身</option>
                   <option value="1">家族(2人)</option>
                   <option value="2">家族(3人以上)</option>
@@ -794,7 +839,7 @@
             <tr>
               <th>距離</th>
               <td class="simulator-select">
-                <select name="on_season" class="full">
+                <select name="distance" class="full js-disrance">
                   <option value="0">15km以内（市区町村内）</option>
                   <option value="1">50km以内（都道府県内）</option>
                   <option value="1">100km以内（同一地方内）</option>
@@ -1161,11 +1206,281 @@
 
   <!-- ボタン -->
   <section class="section-container">
-    <a href="#" class="btn aline-center l-bottom-large">
+    <a href="#" class="btn aline-center l-bottom-small">
       引越し業者へのみんなの引越し口コミを見る
     </a>
   </section>
 
+  <!-- 都道府県別口コミトグル -->
+  <section class="section-container l-bottom-medium">
+    <h3 class="heading-relation l-bottom-small">都道府県別の口コミ</h3>
+    <ul class="listBar listBar-container">
+      <!-- 北海道・東北 -->
+      <li>
+        <a class="js-toggle-bar toggleBar-i-anchor">北海道・東北</a>
+        <ul class="js-toggle-inner listBar-i-anchor toggleBar-inner is-hide">
+          <li>
+            <a href="index.html">北海道</a>
+          </li>
+          <li>
+            <a href="index.html">青森県</a>
+          </li>
+          <li>
+            <a href="index.html">秋田県</a>
+          </li>
+          <li>
+            <a href="index.html">岩手県</a>
+          </li>
+          <li>
+            <a href="index.html">山形県</a>
+          </li>
+          <li>
+            <a href="index.html">宮城県</a>
+          </li>
+          <li>
+            <a href="index.html">福島県</a>
+          </li>
+        </ul>
+      </li>
+      <!-- 関東・甲信越 -->
+      <li>
+        <a class="js-toggle-bar toggleBar-i-anchor">関東・甲信越</a>
+        <ul class="listBar-i-anchor toggleBar-inner is-hide">
+          <li>
+            <a href="index.html">東京都</a>
+          </li>
+          <li>
+            <a href="index.html">神奈川県</a>
+          </li>
+          <li>
+            <a href="index.html">埼玉県</a>
+          </li>
+          <li>
+            <a href="index.html">千葉県</a>
+          </li>
+          <li>
+            <a href="index.html">栃木県</a>
+          </li>
+          <li>
+            <a href="index.html">群馬県</a>
+          </li>
+          <li>
+            <a href="index.html">山梨県</a>
+          </li>
+          <li>
+            <a href="index.html">長野県</a>
+          </li>
+          <li>
+            <a href="index.html">新潟県</a>
+          </li>
+        </ul>
+      </li>
+      <!-- 北海道・東北 -->
+      <li>
+        <a class="js-toggle-bar toggleBar-i-anchor">北海道・東北</a>
+        <ul class="js-toggle-inner listBar-i-anchor toggleBar-inner is-hide">
+          <li>
+            <a href="index.html">北海道</a>
+          </li>
+          <li>
+            <a href="index.html">青森県</a>
+          </li>
+          <li>
+            <a href="index.html">秋田県</a>
+          </li>
+          <li>
+            <a href="index.html">岩手県</a>
+          </li>
+          <li>
+            <a href="index.html">山形県</a>
+          </li>
+          <li>
+            <a href="index.html">宮城県</a>
+          </li>
+          <li>
+            <a href="index.html">福島県</a>
+          </li>
+        </ul>
+      </li>
+      <!-- 関東・甲信越 -->
+      <li class="toggleBar">
+        <a class="js-toggle-bar toggleBar-i-anchor">関東・甲信越</a>
+        <ul class="listBar-i-anchor toggleBar-inner is-hide">
+          <li>
+            <a href="index.html">東京都</a>
+          </li>
+          <li>
+            <a href="index.html">神奈川県</a>
+          </li>
+          <li>
+            <a href="index.html">埼玉県</a>
+          </li>
+          <li>
+            <a href="index.html">千葉県</a>
+          </li>
+          <li>
+            <a href="index.html">栃木県</a>
+          </li>
+          <li>
+            <a href="index.html">群馬県</a>
+          </li>
+          <li>
+            <a href="index.html">山梨県</a>
+          </li>
+          <li>
+            <a href="index.html">長野県</a>
+          </li>
+          <li>
+            <a href="index.html">新潟県</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 手続き一覧 -->
+  <h2 class="heading-title l-bottom-small">市役所・区役所での引越し<br>手続き一覧</h2>
+  <section class="section-container">
+    <p class="l-bottom-medium">引っ越しの前後で行う必要がある、役所での手続きリストです。</p>
+    <p class="l-bottom-large">特に引っ越し前はやることが多くバタバタしがちなので、詳細内容を把握したうえで役場へ赴き、効率よく各種手続きを進めていきましょう。</p>
+    <!-- 手続き -->
+    <h3 class="heading-listTitle l-bottom-small">引っ越し前にする手続き</h3>
+    <ul class="listBar listBar-container listBar-i-anchor l-bottom-medium">
+      <li><a href="#">転居届（同一市区町村への引越し)</a></li>
+      <li><a href="#">転出届（他市区町村への引越し）</a></li>
+      <li><a href="#">印鑑登録</a></li>
+      <li><a href="#">国民健康保険</a></li>
+      <li><a href="#">国民年金</a></li>
+      <li><a href="#">児童手当</a></li>
+      <li><a href="#">介護保険</a></li>
+      <li><a href="#">ペットの登録住所変更</a></li>
+    </ul>
+    <!-- 手続き２ -->
+    <h3 class="heading-listTitle l-bottom-small">引っ越し後にする手続き</h3>
+    <ul class="listBar listBar-container listBar-i-anchor l-bottom-medium">
+      <li><a href="#">転入届（他市区町村から引越し）</a></li>
+      <li><a href="#">マイナンバーの住所変更</a></li>
+      <li><a href="#">母子手帳（検診補助券）</a></li>
+      <li><a href="#">保育園の転園</a></li>
+    </ul>
+  </section>
+
+  <!-- 人気記事一覧 -->
+  <h2 class="heading-title">人気記事一覧</h2>
+  <section class="section-container">
+    <ul class="imageArticles">
+      <li>
+        <img src="images/tips-singlelife-thumbnail.png">
+        <a class="imageArticles-anchor">初めての一人暮らしに必要なものリスト</a>
+      </li>
+      <li>
+        <img src="images/single-pack-bed-thumbnail.png">
+        <a class="imageArticles-anchor">ベッドの運べる引っ越しの単身専用パック</a>
+      </li>
+      <li>
+        <img src="images/initialCost-thumbnail.png">
+        <a>一人暮らし引越しの初期費用は何万円？</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- お役立ち情報 -->
+  <h2 class="heading-title l-bottom-small">引越しのお役立ち情報・サービス</h2>
+  <section class="section-container">
+    <p class="l-bottom-large">引越しのオプションサービスや、引っ越しの専門用語、ピアノの運送料金の一括見積もりサービスを紹介します。</p>
+    <!-- 説明カードリスト -->
+    <!-- カード１ -->
+    <dl class="descriptionAnchor l-bottom-medium">
+      <dt>
+        <h3 class="descriptionAnchor-header">引っ越しのオプションサービスをチェックしよう</h3>
+      </dt>
+      <dd>
+        <div class="descriptionAnchor-body">
+          <img src="images/check-list.png" class="descriptionAnchor-thumbnail">
+          <p>引っ越し業者は、利用者の細かなニーズに対応するために様々なオプションサービスを用意してい…</p>
+        </div>
+        <a href="#">引越しのオプションサービスをチェックしよう</a>
+      </dd>
+    </dl>
+    <!-- カード２ -->
+    <dl class="descriptionAnchor l-bottom-medium">
+      <dt>
+        <h3 class="descriptionAnchor-header">ピアノの引越し・運送業者が一括見積もりサービス</h3>
+      </dt>
+      <dd>
+        <div class="descriptionAnchor-body">
+          <img src="images/service-thumbnail-shipping.png" class="descriptionAnchor-thumbnail">
+          <p>ピアノは温度や湿度の影響を受けやすいデリケートな楽器。ピアノの作りはとても精密で、少し…</p>
+        </div>
+        <a href="#">ピアノ運送・引越しの見積もり料金を比較して格安で配送できる</a>
+      </dd>
+    </dl>
+    <!-- カード３ -->
+    <dl class="descriptionAnchor l-bottom-medium">
+      <dt>
+        <h3 class="descriptionAnchor-header">ピアノ買取の一括査定サービス</h3>
+      </dt>
+      <dd>
+        <div class="descriptionAnchor-body">
+          <img src="images/service-thumbnail-kaitori.png" class="descriptionAnchor-thumbnail">
+          <p>同じピアノでも、買取業者によって査定額に差がでます。ピアノを少しでも高く売りたいなら、引越し侍の【無料】ピアノ買取一括査定サービス…</p>
+        </div>
+        <a href="#">中古ピアノの買取相場と料金比較！ヤマハ・カワイなど何でも鑑定</a>
+      </dd>
+    </dl>
+  </section>
+
+  <!-- 新着記事 -->
+  <h2 class="heading-title l-bottom-small">新着記事</h2>
+  <ul class="newArticles l-bottom-small">
+    <li>
+      <a href="#">
+        <span>新着記事</span>「吉方位に引越しで開運？年ごとの方位の運勢とは」を公開しました
+        <time class="newArticles-time">2019.09.19</time>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        「引っ越しで運気を上げる方法とは？運気が下がった場合の対策も紹介」を公開しました
+        <time class="newArticles-time">2019.09.06</time>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        「賃貸の入居審査で必要な「収入証明書」とは？」を公開しました
+        <time class="newArticles-time">2019.09.03</time>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        「引越しで2トントラックを使いたい！積める荷物の量や料金の目安は？」を公開しました
+        <time class="newArticles-time">2019.08.23</time>
+      </a>
+    </li>
+  </ul>
+
+  <!-- sns -->
+  <section class="section-container">
+    <div class="sns-container">
+      <div class="sns-heading">
+        <img src="images/sns-title.png" class="full">
+      </div>
+      <ul class="sns-btnList">
+        <li class="sns-btnList-btn sns-btnList-twitter l-bottom-small">
+          <a href="#">Twitter</a>
+        </li>
+        <li class="sns-btnList-btn sns-btnList-facebook">
+          <a href="#">Facebook</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- bnr -->
+  <section class="section-container">
+    <img src="images/banner-bnb-contents.png" class="full">
+    <img src="images/banner_cm2018_702x130.jpg" class="full">
+  </section>
   <!-- footer -->
   <footer>
     <div class="footer-copyright">© 2006-2019 Ateam Hikkoshi Samurai Inc.</div>

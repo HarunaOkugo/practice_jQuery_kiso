@@ -26,6 +26,10 @@ body{
   font-weight: bold;
 }
 
+.line-height-xsmall {
+  line-height: 1.2;
+}
+
 .full{
   width: 100%!important;
 }
@@ -74,6 +78,22 @@ body{
   border-left: 6px solid #f44336;
 }
 
+.heading-relation {
+  background-color: #f8f3e8;
+  border-left: 2px solid #602a08;
+  padding: 10px 12px;
+  font-weight: bold;
+  color: #602a08;
+}
+
+.heading-listTitle {
+  background-color: #eee;
+  border-left: 2px solid #333;
+  padding: 10px 12px;
+  font-weight: bold;
+  color: #333;
+}
+
 .section-container{
   padding: 12px;
   background-color: #FFF;
@@ -82,6 +102,25 @@ body{
 .section-fandation{
   padding: 12px;
   background-color: #f7f3e8;
+}
+
+/* サービス紹介 */
+.table-service {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.table-service tbody th {
+  max-width: 65px;
+}
+
+.table-cell-deny {
+  background-color: #fffcdf;
+}
+
+.table-cell-allow {
+  background-color: #ffecec;
 }
 
 /* タブ */
@@ -218,7 +257,7 @@ body{
 }
 
 .ranking-order-3{
-  background-image: url(images/rank_icon02.png);
+  background-image: url(images/rank_icon03.png);
   color: #fff;
 }
 
@@ -328,7 +367,6 @@ body{
 .legend {
   display: flex;
   color: #717171;
-  margin-bottom: 8px;
 }
 
 .legend-colorBox {
@@ -388,6 +426,7 @@ body{
 /* ボタン */
 .btn {
   display: block;
+  font-size: 15px;
   font-weight: bold;
   border: 1px solid #ccc;
   box-shadow: 0 6px 0 0 #ccc;
@@ -524,6 +563,11 @@ body{
   margin-right: 14px;
 }
 
+.descriptionAnchor-thumbnail {
+  width: 40%;
+  margin-right: 14px;
+}
+
 .descriptionAnchor a {
   display: block;
   position: relative;
@@ -537,8 +581,8 @@ body{
 .descriptionAnchor a:after {
   content: "";
   position: absolute;
-  top: 19px;
-  right: 20px;
+  top: 42%;
+  right: 16px;
   width: 6px;
   height: 6px;
   border: 2px solid;
@@ -705,6 +749,7 @@ body{
 
 .post-btn-more {
   display: block;
+  font-size: 14px;
   padding: 8px 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -720,7 +765,7 @@ body{
 .post-btn-more:after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 15px;
   right: 14px;
   width: 6px;
   height: 6px;
@@ -735,7 +780,7 @@ body{
   background-color: #f5f5f5;
   display: block;
   position: relative;
-  padding: 18px 15px;
+  padding: 18px 30px 18px 10px;
 }
 
 .cardFooter a {
@@ -754,6 +799,109 @@ body{
   transform: rotate(45deg);
 }
 
+/* 画像付き記事一覧 */
+.imageArticles li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+}
+
+.imageArticles img {
+  width: 15%;
+  margin-right: 10px;
+}
+
+.imageArticles-anchor {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.imageArticles a {
+  width: 100%;
+  min-height: 58px;
+  padding-right: 20px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.imageArticles a:after {
+  content: "";
+  position: absolute;
+  top: 38%;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-color: #ccc #ccc transparent transparent;
+  transform: rotate(45deg);
+}
+
+/* 新着記事 */
+.newArticles li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.newArticles a {
+  color: #212121;
+}
+
+.newArticles span {
+  background-color: #f28900;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.newArticles time {
+  color: #999;
+  display: block;
+  text-align: right;
+  font-size: 13px;
+}
+
+/* sns */
+.sns-container {
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  background: no-repeat;
+  background-image: url(images/sns-samurai-icon.png);
+  background-size: 120px;
+  background-position: bottom right 10px;
+}
+
+.sns-heading {
+  padding: 8px 44px 2px 44px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.sns-btnList {
+  padding: 20px 12px;
+}
+
+.sns-btnList-btn {
+  display: block;
+  padding: 4px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 55%;
+}
+
+.sns-btnList-btn a {
+  color: #fff;
+}
+
+.sns-btnList-twitter {
+  background-color: #55acef;
+}
+
+.sns-btnList-facebook {
+  background-color: #385b91;
+}
+
+/* footer */
 footer{
   background-color: #f7f7f7;
   margin-bottom: 120px;
@@ -763,4 +911,6 @@ footer{
   background-color: #3c3c3c;
   color: #fff;
   padding: 12px;
+  font-size: 11px;
+  text-align: center;
 }
