@@ -14,7 +14,7 @@
   <!-- サービス紹介 -->
   <h2 class="heading-title l-bottom-small">引越し侍の<br>見積もり比較サービスとは？</h2>
   <section class="section-container">
-    <p class="l-bottom-large">見積り比較サービスとは、面倒で手間のかかる引越し業者の見積もりを簡単に比較して、安い引越し業者を見つけられる無料サービスです。</p>
+    <p class="l-bottom-large" id="js-vwo-text">見積り比較サービスとは、面倒で手間のかかる引越し業者の見積もりを簡単に比較して、安い引越し業者を見つけられる無料サービスです。</p>
     <p class="l-bottom-large">引越し侍では引越しの見積もり比較のやり方を2つのサービスで用意しており、お客様の要望にあわせてご選択頂けます。</p>
     <table class="table line-height-xsmall table-service l-bottom-small">
       <thead>
@@ -51,7 +51,7 @@
     <p class="l-bottom-large">複数の引っ越し見積もりを比較することで、引越し料金を安い金額で抑えることができたり、各引っ越し業者へ値引き交渉することが可能です。</p>
     <p class="l-bottom-large">ご自分で複数の引っ越し会社へ連絡するのは大変ですが、引越し侍の2つのサービスであれば、どなたでも引越し業者の見積もりを一括で比較できる仕組みとなっています。</p>
     <h3 class="heading-subtitle l-bottom-large">一括見積もり依頼サービス</h3>
-    <img src="images/service-estimate.png" class="full l-bottom-medium">
+    <img src="images/service-estimate.png" class="full l-bottom-medium" id="shiba">
     <p class="l-bottom-large">見積もり申し込みフォームに入力した情報を、複数の引越し業者へ同時に配信されるサービスです。情報を受け取った引越し業者は、電話またはメールで依頼者に料金のお知らせ連絡をいたします。</p>
     <p class="l-bottom-large">このサービスのメリットは、<span class="text-strong">引越し業者からの折り返し電話で価格交渉をして安くしてもらえる</span>ところです。</p>
   </section>
@@ -662,7 +662,13 @@
   </div>
   <section class="section-container">
     <!-- ボタン -->
-    <a href="index.html" class="btn aline-center l-bottom-large">引越しの費用相場と総額料金の<br>目安をもっと見る</a>
+    <a class="btn aline-center l-bottom-large" id="js-modal-btn">ここを押すと<br>モーダルがひらきます</a>
+    <div id="js-modal-container" class="modal-container">
+      <div id="js-modal-inner" class="modal-inner">
+        <p>モーダルの練習！橋本塾課題★★</p>
+        <p><a id="js-modal-close" class="modal-btn">閉じる</a></p>
+      </div>
+    </div>
 
     <!-- リンクリスト -->
     <ul class="listBar listBar-i-anchor listBar-container l-bottom-medium">
@@ -1496,5 +1502,6 @@
   <script type="text/javascript" src="tab.js"></script>
   <script type="text/javascript" src="toggleBar.js"></script>
   <script type="text/javascript" src="float.js"></script>
+  <script type="text/javascript" src="vwo.js"></script>
 </body>
 </html>
