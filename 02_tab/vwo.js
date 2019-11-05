@@ -15,29 +15,43 @@ $(function(){
   // ▼下に追加する
   $("#js-vwo-text").append("<p>hogehoge要素の下に追加＝＝＝＝＝＝＝</p>");
 
-  // ▼.table-serviceの下に追加
-  $(".table-service").append("<p>hogehogetableの上に追加============</p>");
+  // // ▼.table-serviceの下に追加
+  // $(".table-service").append("<p>hogehogetableの上に追加============</p>");
 
   // ＊課題③モーダル表示・非表示
-  var modal = $('.js-modal');
-  $('#js-modal-btn').on('click',function(){
-    $(modal).fadeIn();
-  });
-  $('.js-modal-close').on('click',function(){
-    $(modal).fadeOut();
-    return false;
-  });
-  $(modal).on('click',function(){
-    $(this).fadeOut();
-  });
-  $('.js-modal-container').on('click',function(e){
-    e.stopPropagation();
-  });
+  // $('#js-modal-btn').on('click',function(){
+  //   $('.js-modal').fadeIn();
+  // });
+  // $('.js-modal-close').on('click',function(){
+  //   $('.js-modal').fadeOut();
+  //   return false;
+  // });
+  // $('.js-modal').on('click',function(){
+  //   $(this).fadeOut();
+  // });
+  // $('.js-modal-container').on('click',function(e){
+  //   e.stopPropagation();
+  // });
 
-  // →→引数に変換
-  $('#js-modal-btn').on('click')
-});
-
+  // →→変換
+  $('#js-modal-btn').on('click', modal);
+  $('#js-modal-btn2').on('click', modal);
+  $('#js-modal-btn3').on('click', modal);
+  function modal () {
+    $('.js-modal').fadeIn();
+    };
+    $('.js-modal-close').on('click',function(){
+      $('.js-modal').fadeOut();
+      return false;
+    });
+    $('.js-modal').on('click',function(){
+      $(this).fadeOut();
+    });
+    $('.js-modal-container').on('click',function(e){
+      e.stopPropagation();
+    });
+    
+// ＝＝＝＝＝＝＝＝＝
 // ③ボタンを押したらモーダルが出現
 // 開くボタン#js-modal-btn
 // モーダル#js-modal-container
@@ -61,3 +75,10 @@ $(function(){
 //   });
 // });
 
+// 宿題④（復習）
+  $('#js-marketPrice-graph').attr('src','images/banner_cm2018_702x130.jpg');
+
+// 宿題⑤（復習）
+$('#js-obasan-bnr').append('<img src="images/banner-bnb-contents.png" class="full">');
+
+});
