@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.l-bottom-small {
+  margin-bottom: 8px!important;
+}
+
+.l-bottom-medium {
+  margin-bottom: 16px!important;
+}
+
+.l-bottom-large {
+  margin-bottom: 24px!important;
+}
+
+.l-right-small {
+  margin-right: 5px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.color-point {
+  color: red;
+}
+
+.header {
+  background-color: steelblue;
+}
+
+.header p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px;
+}
+
+.section-container {
+  padding: 12px;
+}
+
+.prefectures-container {
+  border: 1px solid #ccc;
+  padding: 12px;
+  position: relative;
+}
+
+.prefectures-header {
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(23, 65, 107);
+}
+
+.prefectures-number {
+  padding: 2px 4px;
+  border-radius: 3px;
+  background-color: rgb(23, 65, 107);
+  color: #fff;
+}
+
+.prefectures-select {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px #ddd;
+  padding: 14px;
+  line-height: 1;
+  border-radius: 0;
+}
+
+.prefectures-select-container {
+  position: relative;
+}
+
+.prefectures-select-container::after {
+  content: "▼";
+  color: #999;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 12px;
+}
+
+.btn-normal {
+  padding:5px;
+  border-radius: 4px;
+  background-color: rgb(23, 65, 107);
+  box-shadow: 0 3px 2px -1px #ddd;
+  margin: 0 10%;
+  text-align: center;
+}
+
+.btn-normal button {
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+}
+
+.prefacture-result {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: rgb(255, 252, 221);
+}
+
+.result-explanation {
+  font-size: 12px;
+  background-color: #f8f8f8;
+  padding: 6px;
+}
+
+.comment {
+  font-size: 12px;
+  color: #999;
+  padding-top: 12px;
+}

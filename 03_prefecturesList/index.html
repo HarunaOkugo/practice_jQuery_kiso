@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../03_prefecturesList/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <title>都道府県リスト</title>
+</head>
+<body>
+  <header class="header l-bottom-medium">
+    <p>橋塾03：ループ処理を覚えよう！</p>
+  </header>
+  <section class="section-container">
+  <!-- ▼１ -->
+    <div class="prefectures-container l-bottom-large">
+      <div class="prefectures-header">
+        <span class="prefectures-number l-right-small">1</span>セレクタで選択した文字を出力
+      </div>
+      <div class="prefectures-select-container">
+        <select id="js-prefectures" class="prefectures-select l-bottom-medium">
+          <option value="hokkaido">北海道</option>
+          <option value="aomori">青森県</option>
+          <option value="iwate">岩手県</option>
+          <option value="miyagi">宮城県</option>
+          <option value="akita">秋田県</option>
+          <option value="yamagata">山形県</option>
+        </select>
+      </div>
+      <div class="btn-normal l-bottom-medium"> 
+        <button id="js-button">決定</button>
+      </div>
+      <div class="prefacture-result">
+        <p id="js-prefacture-result" ></p>
+      </div>
+      <p class="comment">valueがでちゃった。2では文字を出します。</p>
+    </div>
+  <!-- ▲１ -->
+
+  <!-- ▼2 -->
+  <div class="prefectures-container l-bottom-large">
+      <div class="prefectures-header">
+        <span class="prefectures-number l-right-small">2</span>セレクタで選択したテキストを出力
+      </div>
+      <div class="prefectures-select-container">
+        <select id="js-prefectures2" class="prefectures-select l-bottom-medium">
+          <option value="hokkaido">北海道</option>
+          <option value="aomori">青森県</option>
+          <option value="iwate">岩手県</option>
+          <option value="miyagi">宮城県</option>
+          <option value="akita">秋田県</option>
+          <option value="yamagata">山形県</option>
+        </select>
+      </div>
+      <div class="btn-normal l-bottom-medium"> 
+        <button id="js-button2">決定</button>
+      </div>
+      <div class="prefacture-result">
+        <p id="js-prefacture-result2"></p>
+      </div>
+      <p class="comment">切り替えor連打で説明文が永遠に追加されてゆく...。</p>
+    </div>
+  <!-- ▲2 -->
+
+  <!-- ▼3 -->
+    <div class="prefectures-container">
+      <div class="prefectures-header">
+        <span class="prefectures-number l-right-small">3</span>選択肢を切替え,連打で説明文が追加されないようにする
+      </div>
+      <div class="prefectures-select-container">
+        <select id="js-prefectures3" class="prefectures-select l-bottom-medium">
+          <option value="hokkaido">北海道</option>
+          <option value="aomori">青森県</option>
+          <option value="iwate">岩手県</option>
+          <option value="miyagi">宮城県</option>
+          <option value="akita">秋田県</option>
+          <option value="yamagata">山形県</option>
+        </select>
+      </div>
+      <div class="btn-normal l-bottom-medium"> 
+        <button id="js-button3">決定</button>
+      </div>
+      <div class="prefacture-result">
+        <p id="js-prefacture-result3"></p>
+      </div>
+      <p class="comment">都道府県のベタがきやめたい。<br>最初から黄色が表示されているのも無くしたいなあ。<br>複数選択して表示もさせたい。</p>
+    </div>
+  <!-- ▲3 -->
+  </section>
+  <script type="text/javascript" src="js/prefecturesList.js"></script>
+</body>
+</html>
