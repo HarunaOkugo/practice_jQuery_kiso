@@ -28,4 +28,11 @@ $(function(){
     }
   });
 
+  // 4
+  var prefectures4 = ['北海道','青森県','岩手県','宮城県','秋田県','山形県'];
+
+  $.each(prefectures4, function(i, val){
+    console.log(val);
+  });
+
 });
